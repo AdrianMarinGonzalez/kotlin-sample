@@ -17,7 +17,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity(), MainView {
 
-    val ForecastResult: TextView by bindView(R.id.weather_response)
+    val textView: TextView by bindView(R.id.weather_response)
 
     // private val ICON_URL = "http://openweathermap.org/img/w/$iconCode.png"
 
@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity(), MainView {
     }
 
     override fun showWeather(response: ForecastResult) {
+        textView.text = response.toString()
         Toast.makeText(DestinationWeatherApplication.instance(), "Esto es " + response, Toast.LENGTH_SHORT).show()
     }
 }
