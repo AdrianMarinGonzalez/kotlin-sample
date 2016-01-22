@@ -1,9 +1,5 @@
 package com.example.adrian.kotlinsample
 
-import android.app.DownloadManager.Request
-import android.net.Uri
-import com.example.adrian.kotlinsample.models.WeatherResponse
-import com.google.gson.Gson
 import org.jetbrains.anko.async
 import java.net.URL
 

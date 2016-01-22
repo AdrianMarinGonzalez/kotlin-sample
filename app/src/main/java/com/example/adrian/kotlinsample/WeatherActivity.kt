@@ -8,7 +8,7 @@ import android.view.MenuItem
 import android.widget.TextView
 import butterknife.bindView
 
-class MainActivity : AppCompatActivity() {
+class WeatherActivity : AppCompatActivity() {
 
     val weatherResponse: TextView by bindView(R.id.weather_response)
     val apiDatasource = APIDatasource()
