@@ -12,15 +12,14 @@ import butterknife.bindView
 import com.example.adrian.kotlinsample.feature.weather.DestinationWeatherPresenter
 import com.example.adrian.kotlinsample.feature.weather.DestinationWeatherPresenterImpl
 import com.example.adrian.kotlinsample.feature.weather.MainView
-import com.example.adrian.kotlinsample.models.WeatherResponse
+import com.example.adrian.kotlinsample.models.ForecastResult
 import java.util.*
 
 class MainActivity : AppCompatActivity(), MainView {
 
-    val weatherResponse: TextView by bindView(R.id.weather_response)
+    val ForecastResult: TextView by bindView(R.id.weather_response)
 
     // private val ICON_URL = "http://openweathermap.org/img/w/$iconCode.png"
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +48,7 @@ class MainActivity : AppCompatActivity(), MainView {
         return super.onOptionsItemSelected(item)
     }
 
-    override fun showWeather(response: WeatherResponse) {
-        Toast.makeText(DestinationWeatherApplication.instance(), "Esto es " + response.main.tempMax, Toast.LENGTH_SHORT).show()
+    override fun showWeather(response: ForecastResult) {
+        Toast.makeText(DestinationWeatherApplication.instance(), "Esto es " + response, Toast.LENGTH_SHORT).show()
     }
 }
