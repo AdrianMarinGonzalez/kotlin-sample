@@ -23,36 +23,30 @@
             android:id="@+id/image1"
             app:layout_widthPercent="20%"
             app:layout_heightPercent="100%"
-            app:layout_marginTopPercent="25%"
-            app:layout_marginLeftPercent="25%"/>
+            />
         <ImageView
             android:layout_toRightOf="@+id/image1"
             android:id="@+id/image2"
             app:layout_widthPercent="20%"
-            app:layout_heightPercent="100%"
-            app:layout_marginTopPercent="25%"
-            app:layout_marginLeftPercent="25%"/>
+            app:layout_heightPercent="100%"/>
         <ImageView
             android:layout_toRightOf="@+id/image2"
             android:id="@+id/image3"
             app:layout_widthPercent="20%"
             app:layout_heightPercent="100%"
-            app:layout_marginTopPercent="25%"
-            app:layout_marginLeftPercent="25%"/>
+            />
         <ImageView
             android:layout_toRightOf="@+id/image3"
             android:id="@+id/image4"
             app:layout_widthPercent="20%"
             app:layout_heightPercent="100%"
-            app:layout_marginTopPercent="25%"
-            app:layout_marginLeftPercent="25%"/>
+            />
         <ImageView
             android:layout_toRightOf="@+id/image4"
             android:id="@+id/image5"
             app:layout_widthPercent="20%"
             app:layout_heightPercent="100%"
-            app:layout_marginTopPercent="25%"
-            app:layout_marginLeftPercent="25%"/>
+            />
     </android.support.percent.PercentRelativeLayout>
 
 

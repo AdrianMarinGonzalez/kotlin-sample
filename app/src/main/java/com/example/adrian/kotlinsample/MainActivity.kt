@@ -54,10 +54,7 @@ class MainActivity : AppCompatActivity(), MainView {
         textView.text = response.toString()
 
         for (index in 0..4) {
-            if (response.list.get(index).weather.get(0).icon.isNotEmpty() ) {
                 Glide.with(this).load("http://openweathermap.org/img/w/${response.list.get(index).weather.get(0).icon}.png").into(image[index])
-
-            }
         }
         Toast.makeText(DestinationWeatherApplication.instance(), "Esto es " + response, Toast.LENGTH_SHORT).show()
     }
