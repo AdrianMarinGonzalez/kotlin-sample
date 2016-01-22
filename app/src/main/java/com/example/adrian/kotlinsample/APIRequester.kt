@@ -1,5 +1,6 @@
 package com.example.adrian.kotlinsample
 
+import android.R
 import android.app.DownloadManager.Request
 import android.net.Uri
 import com.example.adrian.kotlinsample.models.WeatherResponse
