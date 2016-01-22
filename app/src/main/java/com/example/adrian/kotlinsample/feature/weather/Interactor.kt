@@ -6,5 +6,5 @@ import android.content.Context
  * Created by franciscoalfacemartin on 22/1/16.
  */
 public interface Interactor<T> {
-    fun executeInteractor()
+    fun executeInteractor(listener : (T) -> Unit)
 }

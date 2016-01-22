@@ -1,5 +1,6 @@
 package com.example.adrian.kotlinsample.feature.weather
 
+import com.example.adrian.kotlinsample.models.WeatherResponse
 import java.util.*
 
 /**
@@ -7,8 +8,13 @@ import java.util.*
  */
 public class DestinationWeatherPresenterImpl : DestinationWeatherPresenter {
 
-    override fun getDestinationWeather(destinationName: String, date: Date) {
+    val callback : (WeatherResponse) -> Unit = {
 
+    }
+
+    override fun getDestinationWeather(destinationName: String, date: Date) {
+        val interactor = GetDestinationWeatherInteractor("canada", "12/14")
+        interactor.executeInteractor(callback)
     }
 
 }

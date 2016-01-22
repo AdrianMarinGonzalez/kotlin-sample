@@ -8,6 +8,9 @@ import android.support.v7.widget.Toolbar
 import android.view.View
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.TextView
+import butterknife.bindView
+import com.example.adrian.kotlinsample.feature.weather.GetDestinationWeatherInteractor
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,8 +25,6 @@ class MainActivity : AppCompatActivity() {
         savedInstanceState
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
-        val interactor = GetDestinationWeatherInteractor(this, "canada", "12/14")
-        interactor.executeInteractor()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
