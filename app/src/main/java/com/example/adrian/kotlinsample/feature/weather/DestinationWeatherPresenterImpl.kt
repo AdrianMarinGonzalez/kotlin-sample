@@ -8,8 +8,6 @@ import java.util.*
  */
 public class DestinationWeatherPresenterImpl(mainView:MainView) : DestinationWeatherPresenter {
 
-    val mainView = mainView
-
     val callback : (ForecastResult) -> Unit = {
         mainView.showWeather(it)
     }
@@ -18,5 +16,4 @@ public class DestinationWeatherPresenterImpl(mainView:MainView) : DestinationWea
         val interactor = GetDestinationWeatherInteractor("canada", "12/14")
         interactor.executeInteractor(callback)
     }
-
 }

@@ -13,10 +13,57 @@
     tools:context="com.example.adrian.kotlinsample.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView android:id="@+id/weather_response"
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/images_layer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/image1"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="100%"
+            app:layout_marginTopPercent="25%"
+            app:layout_marginLeftPercent="25%"/>
+        <ImageView
+            android:layout_toRightOf="@+id/image1"
+            android:id="@+id/image2"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="100%"
+            app:layout_marginTopPercent="25%"
+            app:layout_marginLeftPercent="25%"/>
+        <ImageView
+            android:layout_toRightOf="@+id/image2"
+            android:id="@+id/image3"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="100%"
+            app:layout_marginTopPercent="25%"
+            app:layout_marginLeftPercent="25%"/>
+        <ImageView
+            android:layout_toRightOf="@+id/image3"
+            android:id="@+id/image4"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="100%"
+            app:layout_marginTopPercent="25%"
+            app:layout_marginLeftPercent="25%"/>
+        <ImageView
+            android:layout_toRightOf="@+id/image4"
+            android:id="@+id/image5"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="100%"
+            app:layout_marginTopPercent="25%"
+            app:layout_marginLeftPercent="25%"/>
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <TextView
+        android:layout_below="@+id/images_layer"
+        android:id="@+id/weather_response"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="19sp"/>
+
+
 
 </RelativeLayout>

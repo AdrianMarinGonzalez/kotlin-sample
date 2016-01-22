@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import butterknife.bindView
+import butterknife.bindViews
+import com.bumptech.glide.Glide
 import com.example.adrian.kotlinsample.feature.weather.DestinationWeatherPresenter
 import com.example.adrian.kotlinsample.feature.weather.DestinationWeatherPresenterImpl
 import com.example.adrian.kotlinsample.feature.weather.MainView
@@ -18,8 +21,7 @@ import java.util.*
 class MainActivity : AppCompatActivity(), MainView {
 
     val textView: TextView by bindView(R.id.weather_response)
-
-    // private val ICON_URL = "http://openweathermap.org/img/w/$iconCode.png"
+    val image: List<ImageView> by bindViews(R.id.image1,R.id.image2,R.id.image3,R.id.image4,R.id.image5)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +29,7 @@ class MainActivity : AppCompatActivity(), MainView {
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
 
-        val presenter : DestinationWeatherPresenter = DestinationWeatherPresenterImpl(this)
+        val presenter: DestinationWeatherPresenter = DestinationWeatherPresenterImpl(this)
         presenter.getDestinationWeather("Madrid", Date())
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
@@ -50,6 +52,13 @@ class MainActivity : AppCompatActivity(), MainView {
 
     override fun showWeather(response: ForecastResult) {
         textView.text = response.toString()
+
+        for (index in 0..4) {
+            if (response.list.get(index).weather.get(0).icon.isNotEmpty() ) {
+                Glide.with(this).load("http://openweathermap.org/img/w/${response.list.get(index).weather.get(0).icon}.png").into(image[index])
+
+            }
+        }
         Toast.makeText(DestinationWeatherApplication.instance(), "Esto es " + response, Toast.LENGTH_SHORT).show()
     }
 }
