@@ -2,17 +2,20 @@ package com.example.adrian.kotlinsample
 
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.view.View
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
+import android.widget.Toast
 import butterknife.bindView
-import com.example.adrian.kotlinsample.feature.weather.GetDestinationWeatherInteractor
+import com.example.adrian.kotlinsample.feature.weather.DestinationWeatherPresenter
+import com.example.adrian.kotlinsample.feature.weather.DestinationWeatherPresenterImpl
+import com.example.adrian.kotlinsample.feature.weather.MainView
+import com.example.adrian.kotlinsample.models.WeatherResponse
+import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MainView {
 
     val weatherResponse: TextView by bindView(R.id.weather_response)
 
@@ -22,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
 
-        savedInstanceState
+        val presenter : DestinationWeatherPresenter = DestinationWeatherPresenterImpl(this)
+        presenter.getDestinationWeather("Madrid", Date())
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
     }
@@ -40,5 +44,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun showWeather(response: WeatherResponse) {
+        Toast.makeText(DestinationWeatherApplication.instance(), "Esto es " + response.main.tempMax, Toast.LENGTH_SHORT).show()
     }
 }

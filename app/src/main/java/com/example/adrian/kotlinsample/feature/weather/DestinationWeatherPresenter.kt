@@ -1,5 +1,6 @@
 package com.example.adrian.kotlinsample.feature.weather
 
+import com.example.adrian.kotlinsample.models.WeatherResponse
 import java.util.*
 
 /**

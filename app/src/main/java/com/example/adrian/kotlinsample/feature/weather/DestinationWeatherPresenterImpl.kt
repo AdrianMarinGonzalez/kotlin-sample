@@ -6,10 +6,12 @@ import java.util.*
 /**
  * Created by franciscoalfacemartin on 22/1/16.
  */
-public class DestinationWeatherPresenterImpl : DestinationWeatherPresenter {
+public class DestinationWeatherPresenterImpl(mainView:MainView) : DestinationWeatherPresenter {
+
+    val mainView = mainView
 
     val callback : (WeatherResponse) -> Unit = {
-
+        mainView.showWeather(it)
     }
 
     override fun getDestinationWeather(destinationName: String, date: Date) {

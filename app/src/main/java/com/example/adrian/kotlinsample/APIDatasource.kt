@@ -1,8 +1,5 @@
 package com.example.adrian.kotlinsample
 
-import android.R
-import android.app.DownloadManager.Request
-import android.net.Uri
 import com.example.adrian.kotlinsample.models.WeatherResponse
 import com.google.gson.Gson
 import org.jetbrains.anko.async
@@ -21,11 +18,9 @@ public class APIDatasource {
         private val COMPLETE_URL = "$URL&APPID=$APP_ID&q="
     }
 
-    public fun getWeather(city: String, callback: (String) -> Unit) {
-        async() {
-            var forecastJsonStr = URL(COMPLETE_URL + city).readText()
-            callback(forecastJsonStr)
-        }
+    public fun getWeather(city: String) : WeatherResponse{
+        var forecastJsonStr = URL(COMPLETE_URL + city).readText()
+        return Gson().fromJson(forecastJsonStr, WeatherResponse::class.java)
     }
 
 }
