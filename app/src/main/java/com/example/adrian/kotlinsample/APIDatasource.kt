@@ -20,7 +20,8 @@ public class APIDatasource {
 
     public fun getWeather(city: String) : WeatherResponse{
         var forecastJsonStr = URL(COMPLETE_URL + city).readText()
-        return Gson().fromJson(forecastJsonStr, WeatherResponse::class.java)
+        var response : WeatherResponse = Gson().fromJson(forecastJsonStr, WeatherResponse::class.java)
+        return response
     }
 
 }

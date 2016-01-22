@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity(), MainView {
 
     val weatherResponse: TextView by bindView(R.id.weather_response)
 
+    // private val ICON_URL = "http://openweathermap.org/img/w/$iconCode.png"
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
