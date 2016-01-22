@@ -50,9 +50,6 @@
     <item name='android.support.v4.media.routing.MediaRouterJellybeanMr2.RouteInfo java.lang.CharSequence getDescription(java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='android.support.v4.media.routing.MediaRouterJellybean.RouteGroup java.util.List getGroupedRoutes(java.lang.Object)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='android.support.v4.media.routing.MediaRouterJellybean.RouteInfo void requestSetVolume(java.lang.Object, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -71,10 +68,13 @@
     <item name='android.support.v4.media.routing.MediaRouterJellybean.UserRouteInfo void setVolumeHandling(java.lang.Object, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='android.support.v4.media.routing.MediaRouterJellybean.RouteInfo java.lang.CharSequence getName(java.lang.Object, android.content.Context) 0'>
+    <item name='android.support.v4.media.routing.MediaRouterJellybean.RouteCategory java.util.List getRoutes(java.lang.Object)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='android.support.v4.media.routing.MediaRouterJellybean.RouteCategory java.util.List getRoutes(java.lang.Object)'>
+    <item name='android.support.v4.media.routing.MediaRouterJellybean.RouteGroup java.util.List getGroupedRoutes(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v4.media.routing.MediaRouterJellybean.RouteInfo java.lang.CharSequence getName(java.lang.Object, android.content.Context) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='android.support.v4.media.routing.MediaRouterJellybean.RouteCategory java.util.List getRoutes(java.lang.Object) 0'>

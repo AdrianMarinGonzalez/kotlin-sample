@@ -1,11 +1,5 @@
 <root>
-    <item name='kotlin.math.OperationsKt java.math.BigDecimal minus(java.math.BigDecimal, java.math.BigDecimal)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='kotlin.math.OperationsKt java.math.BigInteger minus(java.math.BigInteger, java.math.BigInteger) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='kotlin.math.OperationsKt java.math.BigInteger unaryMinus(java.math.BigInteger)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigInteger unaryMinus(java.math.BigInteger) 0'>
@@ -14,7 +8,7 @@
     <item name='kotlin.math.OperationsKt java.math.BigDecimal minus(java.math.BigDecimal, java.math.BigDecimal) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigDecimal mod(java.math.BigDecimal, java.math.BigDecimal)'>
+    <item name='kotlin.math.OperationsKt java.math.BigInteger times(java.math.BigInteger, java.math.BigInteger)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigInteger plus(java.math.BigInteger, java.math.BigInteger)'>
@@ -23,10 +17,10 @@
     <item name='kotlin.math.OperationsKt java.math.BigInteger plus(java.math.BigInteger, java.math.BigInteger) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigDecimal div(java.math.BigDecimal, java.math.BigDecimal) 1'>
+    <item name='kotlin.math.OperationsKt java.math.BigDecimal unaryMinus(java.math.BigDecimal)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigDecimal plus(java.math.BigDecimal, java.math.BigDecimal)'>
+    <item name='kotlin.math.OperationsKt java.math.BigDecimal div(java.math.BigDecimal, java.math.BigDecimal) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigDecimal mod(java.math.BigDecimal, java.math.BigDecimal) 0'>
@@ -38,28 +32,28 @@
     <item name='kotlin.math.OperationsKt java.math.BigDecimal times(java.math.BigDecimal, java.math.BigDecimal) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigInteger div(java.math.BigInteger, java.math.BigInteger)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='kotlin.math.OperationsKt java.math.BigDecimal plus(java.math.BigDecimal, java.math.BigDecimal) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigInteger times(java.math.BigInteger, java.math.BigInteger) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigInteger minus(java.math.BigInteger, java.math.BigInteger) 0'>
+    <item name='kotlin.math.OperationsKt java.math.BigDecimal times(java.math.BigDecimal, java.math.BigDecimal)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigInteger minus(java.math.BigInteger, java.math.BigInteger)'>
+    <item name='kotlin.math.OperationsKt java.math.BigDecimal minus(java.math.BigDecimal, java.math.BigDecimal)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='kotlin.math.OperationsKt java.math.BigInteger minus(java.math.BigInteger, java.math.BigInteger) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigDecimal minus(java.math.BigDecimal, java.math.BigDecimal) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigDecimal mod(java.math.BigDecimal, java.math.BigDecimal) 1'>
+    <item name='kotlin.math.OperationsKt java.math.BigInteger minus(java.math.BigInteger, java.math.BigInteger)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigDecimal div(java.math.BigDecimal, java.math.BigDecimal)'>
+    <item name='kotlin.math.OperationsKt java.math.BigDecimal mod(java.math.BigDecimal, java.math.BigDecimal) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigDecimal times(java.math.BigDecimal, java.math.BigDecimal) 0'>
@@ -68,10 +62,10 @@
     <item name='kotlin.math.OperationsKt java.math.BigDecimal div(java.math.BigDecimal, java.math.BigDecimal) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigInteger plus(java.math.BigInteger, java.math.BigInteger) 1'>
+    <item name='kotlin.math.OperationsKt java.math.BigDecimal plus(java.math.BigDecimal, java.math.BigDecimal)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigDecimal times(java.math.BigDecimal, java.math.BigDecimal)'>
+    <item name='kotlin.math.OperationsKt java.math.BigInteger plus(java.math.BigInteger, java.math.BigInteger) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigInteger div(java.math.BigInteger, java.math.BigInteger) 1'>
@@ -80,13 +74,19 @@
     <item name='kotlin.math.OperationsKt java.math.BigDecimal plus(java.math.BigDecimal, java.math.BigDecimal) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigInteger times(java.math.BigInteger, java.math.BigInteger)'>
+    <item name='kotlin.math.OperationsKt java.math.BigDecimal div(java.math.BigDecimal, java.math.BigDecimal)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigInteger times(java.math.BigInteger, java.math.BigInteger) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='kotlin.math.OperationsKt java.math.BigDecimal unaryMinus(java.math.BigDecimal)'>
+    <item name='kotlin.math.OperationsKt java.math.BigDecimal mod(java.math.BigDecimal, java.math.BigDecimal)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='kotlin.math.OperationsKt java.math.BigInteger div(java.math.BigInteger, java.math.BigInteger)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='kotlin.math.OperationsKt java.math.BigInteger unaryMinus(java.math.BigInteger)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='kotlin.math.OperationsKt java.math.BigDecimal unaryMinus(java.math.BigDecimal) 0'>

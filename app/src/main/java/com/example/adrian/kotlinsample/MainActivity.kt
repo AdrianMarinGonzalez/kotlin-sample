@@ -1,15 +1,21 @@
 package com.example.adrian.kotlinsample
 
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.view.View
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.TextView
+import butterknife.bindView
 
 class MainActivity : AppCompatActivity() {
+
+    val weatherResponse: TextView by bindView(R.id.weather_response)
+    val apiDatasource = APIDatasource()
+
+    val callback : (String) -> Unit = {
+        weatherResponse.text = it;
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +23,8 @@ class MainActivity : AppCompatActivity() {
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
 
-        val fab = findViewById(R.id.fab) as FloatingActionButton
+        apiDatasource.getWeather("London", callback)
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -39,4 +46,5 @@ class MainActivity : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
+
 }

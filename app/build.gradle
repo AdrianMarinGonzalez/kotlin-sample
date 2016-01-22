@@ -28,10 +28,15 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
+
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'org.jetbrains.anko:anko-sdk15:0.8' // sdk19, sdk21, sdk23 are also available
+    compile 'org.jetbrains.anko:anko-sdk23:0.8' // sdk19, sdk21, sdk23 are also available
     compile 'org.jetbrains.anko:anko-support-v4:0.8' // In case you need support-v4 bindings
     compile 'org.jetbrains.anko:anko-appcompat-v7:0.8' // For appcompat-v7 bindings
+
+    compile 'com.jakewharton:kotterknife:0.1.0-SNAPSHOT'
+    compile "com.google.code.gson:gson:2.4"
+
 }
 buildscript {
     ext.kotlin_version = '1.0.0-beta-4589'
