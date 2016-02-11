@@ -5,47 +5,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.adrian.kotlinsample.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
 
     <android.support.percent.PercentRelativeLayout
+        android:layout_below="@+id/header"
         android:id="@+id/images_layer"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="100dp">
 
-        <ImageView
-            android:id="@+id/image1"
-            app:layout_widthPercent="20%"
+        <include
+            layout="@layout/day_weather"
+            android:id="@+id/day1"
+            app:layout_widthPercent="33%"
             app:layout_heightPercent="100%"
             />
-        <ImageView
-            android:layout_toRightOf="@+id/image1"
-            android:id="@+id/image2"
-            app:layout_widthPercent="20%"
-            app:layout_heightPercent="100%"/>
-        <ImageView
-            android:layout_toRightOf="@+id/image2"
-            android:id="@+id/image3"
-            app:layout_widthPercent="20%"
-            app:layout_heightPercent="100%"
+        <include layout="@layout/day_weather1"
+                 android:layout_toRightOf="@id/day1"
+                 android:id="@+id/day2"
+                 app:layout_widthPercent="33%"
+                 app:layout_heightPercent="100%"
             />
-        <ImageView
-            android:layout_toRightOf="@+id/image3"
-            android:id="@+id/image4"
-            app:layout_widthPercent="20%"
-            app:layout_heightPercent="100%"
-            />
-        <ImageView
-            android:layout_toRightOf="@+id/image4"
-            android:id="@+id/image5"
-            app:layout_widthPercent="20%"
-            app:layout_heightPercent="100%"
+        <include layout="@layout/day_weather2"
+                 android:layout_toRightOf="@id/day2"
+                 android:id="@+id/day3"
+                 app:layout_widthPercent="33%"
+                 app:layout_heightPercent="100%"
             />
     </android.support.percent.PercentRelativeLayout>
 

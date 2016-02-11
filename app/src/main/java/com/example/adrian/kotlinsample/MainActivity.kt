@@ -8,7 +8,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import butterknife.bindView
 import butterknife.bindViews
 import com.bumptech.glide.Glide

@@ -2,7 +2,7 @@ package com.example.adrian.kotlinsample
 
 import com.example.adrian.kotlinsample.models.ForecastResult
 import com.google.gson.Gson
-import org.jetbrains.anko.async
+import org.jetbrains.anko
 import java.net.URL
 
 /**
